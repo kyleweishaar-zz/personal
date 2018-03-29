@@ -1,35 +1,8 @@
 body {
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 /* centers an element exact center of viewport */
-
-#middle {
-    position: absolute;
-    /*puts element's upper left corner exact midle*/
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    /*adjusts the position so the elements centers relative to its size*/
-    transform: translate(-50%, -50%);
-}
-
-.container-fluid.main {
-    display:flex;
-    flex-direction: column;
-}
-
-.container > h1 {
-    font-size:8.5rem;
-}
-
-.container > p {
-    font-size:5.5rem;
-}
-
-.cover {
-    font-family: 'Reenie Beanie', cursive;
-}
 
 #move {
     position: absolute;
@@ -38,10 +11,12 @@ body {
     border-radius: 50%;
 }
 
-.a {
+.shape {
     position:absolute;
-    left:-10px;
-    background-color:rgba(244, 244, 244, 0.5);
+    background-color:#500a0a80;
+    border:1px solid black;
+    margin:0;
+    padding:0;
 }
 
 

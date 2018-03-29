@@ -27,71 +27,17 @@
     <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
     <title>Kyle Weishaar</title>
 
+    <!--Use Ajax --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+    <!-- personal scripts -->
+    <script src="draggable.js" lang="JavaScript"></script>
 </head>
 
 <body>
-    <div class="a" id="move"></div>
-
-    <div class="container-fluid main">
-
-        <div class="container-fluid" id="middle">
-            <div class="container">
-                <h1 class="cover">Kyle Weishaar</h1>
-            </div>
-        </div>
-
-        <div class="container-fluid" id="middle">
-            <div class="container">
-                <p class="cover">Technical Writer
-                    <span class="glyphicon glyphicon-pencil"></span>
-                </p>
-            </div>
-
-            <div class="container">
-                <p class="cover">Coffee Enthusiast
-                    <span class="glyphicon glyphicon-heart"></span>
-                </p>
-            </div>
-
-            <div class="container">
-                <p class="cover">Linguaphile
-                    <span class="glyphicon glyphicon-education"></span>
-                </p>
-            </div>
-            
-        </div>
-    </div>
-
-
-
-
-    <script>
-        var mouseX = 0,
-            mouseY = 0;
-
-        $(document).mousemove(function (e) {
-            mouseX = e.pageX;
-            mouseY = e.pageY;
-        });
-
-        var follower = $("#move");
-        var xp = 40,
-            yp = 40;
-        var loop = setInterval(function () {
-            // change 12 to alter damping higher is slower
-            xp += (mouseX - xp) / 2 - 0;
-            yp += (mouseY - yp) / 2 - 0;
-            follower.css({
-                left: xp,
-                top: yp
-            });
-
-        }, 30);
-    </script>
-
-
+    <div class="shape" id="move"></div>
 </body>
+
+
 
 </html>
