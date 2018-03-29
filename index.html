@@ -13,16 +13,24 @@
     <meta http-equiv="refresh" content="30">
     <link rel="icon" href="">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/jquery.lettering.js" lang="JavaScript"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+            $(document).ready(function() {
+            $(".letter").lettering();
+                });
+    </script>
 
     <!-- My local style sheet -->
     <link rel="stylesheet" href="./css/style.css">
-    
+
+    <!--animate.css -->
+    <link rel="stylesheet" href="./css/node_modules/animate.css/animate.min.css">
 
     <!-- Google font -->
 
@@ -34,10 +42,14 @@
 </head>
 
 <body>
-    <h1 class="tlt">Hide and Seek</h1>
+    <div class="center">
+        <h1 class="letter">Hey, wanna play...</h1>
+        
+    </div>
 
-<!-- Scripts -- >
-
+    <!-- Scripts -- >
+    <script src="./js/draggable.js" lang="JavaScript"></script>
+    
 
 </body>
 
