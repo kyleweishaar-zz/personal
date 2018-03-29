@@ -1,9 +1,4 @@
-body {
-    background-color: whitesmoke;
-}
-
-/* centers an element exact center of viewport */
-
+/* -----------Draggable div ---------*/
 #move {
     position: absolute;
     height:400px;
@@ -13,11 +8,35 @@ body {
 
 .shape {
     position:absolute;
-    background-color:#500a0a80;
-    border:1px solid black;
     margin:0;
     padding:0;
 }
+
+.a {
+    background-color:#76e21e80;
+    border:10px solid black;
+    top: 15%;
+    left:15%;
+}
+.b {
+    background-color:#500a0a80;
+    border:1px solid black;
+    top: 15%;
+    left:45%;
+}
+.c {
+    background-color:orangered;
+    border:1px solid black;
+    top: 45%;
+    left:15%;
+}
+.d {
+    background-color:#500a4a80;
+    border:1px solid black;
+    top: 45%;
+    left:45%;
+}
+
 
 
 
