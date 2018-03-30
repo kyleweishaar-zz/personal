@@ -40,7 +40,7 @@ body {
 
 .letter {
     color: #fff;
-    font-size: 8em;
+    font-size: 6em;
     margin: 0;
     padding: 0;
     transition: 0.75s;
@@ -59,7 +59,7 @@ body {
 .letter .char9,
 .letter .char11 {
     background: rgba(255, 215, 199, 1);
-    width: 1em;
+    width: 1.5em;
 }
 
 .letter .char2,
@@ -70,7 +70,7 @@ body {
 .letter .char10,
 .letter .char12 {
     background: rgba(255, 215, 199, 1);
-    width: 1em;
+    width: 1.5em;
 }
 
 .letter .char1,
@@ -91,23 +91,27 @@ body {
     text-shadow: 0 5px 2px rgb(0, 0, 0, 0.1);
     box-shadow: 10px 50px 20px rgb(0, 0, 0, 0.1);
     filter: blur(.5px);
+    text-align:center;
 }
 
 .center:hover .letter {
     transform: perspective(0px) rotateX(0deg);
-    font-size: 7em;
 }
 
 .center:hover .letter .char1,
 .center:hover .letter .char5 {
     font-weight: 900;
+    background: rgba(197, 104, 6,0.2);
+    transform: skewY(0deg);
+    filter: blur(0);
+    text-shadow: 0 5px 2px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0px 2px rgb(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
 .center:hover .letter .char2,
 .center:hover .letter .char3,
 .center:hover .letter .char4,
-.center:hover .letter .char5,
-.center:hover .letter .char1,
 .center:hover .letter .char6,
 .center:hover .letter .char7,
 .center:hover .letter .char8,
@@ -123,52 +127,63 @@ body {
     padding: 0 20px;
 }
 
+/*k*/
 .letter .char1 {
-    z-index: 1;
-    transform: translate(6em, 0);
+    z-index: 4;
+    transform: translate(900%, 0);
 }
-
+/*y*/
 .letter .char2 {
-    transform: translate(5em, 0);
+    z-index: 6;
+    transform: translate(400%, 0);
 }
-
+/*l*/
 .letter .char3 {
-    transform: translate(4em, 0);
+    z-index: 7;
+    transform: translate(200%, 0);
 }
-
+/*e*/
 .letter .char4 {
-    transform: translate(3em, 0);
+    z-index: 13;
+    transform: translate(-300%, 0);
 }
-
+/*w*/
 .letter .char5 {
-    z-index: 1;
-    transform: translate(2em, 0);
+    z-index: 4;
+    transform: translate(400%, 0);
 }
-
+/*e*/
 .letter .char6 {
-    transform: translate(0.5em, 0);
+    z-index: 3;
+    transform: translate(500%, 0);
 }
-
+/*i easily hawker*/
 .letter .char7 {
-    transform: translate(-1em, 0);
+    z-index: 8;
+    transform: translate(-300%, 0);
 }
-
+/*s*/
 .letter .char8 {
-    transform: translate(-2em, 0);
+    z-index: 9;
+    transform: translate(-500%, 0);
 }
-
+/*h*/
 .letter .char9 {
-    transform: translate(-3em, 0);
+    z-index: 5;
+    transform: translate(-200%, 0);
 }
-
+/*a*/
 .letter .char10 {
-    transform: translate(-4.1em, 0);
+    z-index: 10;
+    transform: translate(-800%, 0);
 }
-
+/*a*/
 .letter .char11 {
-    transform: translate(-5.5em, 0);
+    z-index: 4;
+    transform: translate(-300%, 0);
 }
-
+/*r*/
 .letter .char12 {
-    transform: translate(-6.5em, 0);
+    z-index: 1;
+    transform: translate(0, 0);
 }
