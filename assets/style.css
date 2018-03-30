@@ -1,0 +1,115 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Flamenco', cursive;
+    background-color: lightsalmon;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.letter {
+    color: #fff;
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+    transition: 0.75s;
+    transform: perspective(1000px) rotateX(35deg);
+    display:flex;
+}
+
+.center .hide {
+    padding: 25px 0;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 4em;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 3s linear;
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.center:hover .hide {
+    visibility: visible;
+    opacity:1;
+}
+
+
+.letter .char1,
+.letter .char3,
+.letter .char5,
+.letter .char7,
+.letter .char9,
+.letter .char11 {
+    background: #7ad9ff;
+    transform: skewY(-15deg);
+}
+
+.letter .char2,
+.letter .char4,
+.letter .char6,
+.letter .char8,
+.letter .char10,
+.letter .char12 {
+    background: rgba(122, 217, 255, 0.1);
+    transform: skewY(15deg);
+}
+
+.letter .char2,
+.letter .char3,
+.letter .char4,
+.letter .char6,
+.letter .char7,
+.letter .char1,
+.letter .char8,
+.letter .char9,
+.letter .char10,
+.letter .char5,
+.letter .char11,
+.letter .char12 {
+    display:inline-block;
+    padding: 0 10px;
+    transition: .75s;
+    text-shadow:0 5px 2px rgb(0,0,0,0.1);
+    box-shadow:10px 50px 20px rgb(0,0,0,0.1);
+    filter:blur(.5px);
+}
+
+.letter:hover .char1,
+.letter:hover .char2,
+.letter:hover .char3,
+.letter:hover .char4,
+.letter:hover .char5,
+.letter:hover .char6,
+.letter:hover .char7,
+.letter:hover .char8,
+.letter:hover .char9,
+.letter:hover .char10,
+.letter:hover .char11,
+.letter:hover .char12 {
+
+    background: #FFB294;
+    transform: skewY(0deg);
+    filter:blur(0);
+    text-shadow:0 5px 2px rgb(0,0,0,0.1);
+    box-shadow:0 0px 2px rgb(0,0,0,0.1); 
+    padding: 0 20px;
+}
+
+.letter:hover {
+    transform: perspective(0px) rotateX(0deg);
+}
+
+.letter:hover .char1,
+.letter:hover .char5 {
+    font-weight:900;
+}
+
+
+
