@@ -1,3 +1,21 @@
+/* Style for the main content 
+
+---------------------------
+    To use loaded fonts...
+
+font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Flamenco', cursive;
+font-family: 'Roboto', sans-serif;
+
+    Color Palette ...
+    
+#0b1d2e	(11,29,46) dark blueish
+#ffa07a	(255,160,122) salmon
+#005387	(0,83,135) main blue
+#bbbbbb	(187,187,187) ligt grey
+#aaaaaa	(170,170,170) darker grey
+ -------------------------- */
+
 body {
     padding: 0;
     margin: 0;
@@ -30,9 +48,6 @@ body {
 
 /*Shows the technical writer div on hover */
 
-.center:hover .hide {
-    color: black;
-}
 
 /* Styles the main name text block */
 
@@ -92,122 +107,11 @@ body {
     text-align: center;
 }
 
-/* letter placement for anagram scramble */
-
-/*k*/
-
-.letter .char1 {
-    z-index: 4;
-    transform: translate(900%, 0);
+.row .letter {
+    margin: auto;
+    max-width: 100%;
 }
 
-/*y*/
-
-.letter .char2 {
-    z-index: 6;
-    transform: translate(400%, 0);
-}
-
-/*l*/
-
-.letter .char3 {
-    z-index: 7;
-    transform: translate(200%, 0);
-}
-
-/*e*/
-
-.letter .char4 {
-    z-index: 13;
-    transform: translate(-300%, 0);
-}
-
-/*w*/
-
-.letter .char5 {
-    z-index: 4;
-    transform: translate(400%, 0);
-}
-
-/*e*/
-
-.letter .char6 {
-    z-index: 3;
-    transform: translate(500%, 0);
-}
-
-/*i easily hawker*/
-
-.letter .char7 {
-    z-index: 8;
-    transform: translate(-300%, 0);
-}
-
-/*s*/
-
-.letter .char8 {
-    z-index: 9;
-    transform: translate(-500%, 0);
-}
-
-/*h*/
-
-.letter .char9 {
-    z-index: 5;
-    transform: translate(-200%, 0);
-}
-
-/*a*/
-
-.letter .char10 {
-    z-index: 10;
-    transform: translate(-800%, 0);
-}
-
-/*a*/
-
-.letter .char11 {
-    z-index: 4;
-    transform: translate(-300%, 0);
-}
-
-/*r*/
-
-.letter .char12 {
-    z-index: 1;
-    transform: translate(0, 0);
-}
-
-/* All hover styles */ 
-.center:hover .letter {
-    transform: perspective(0px) rotateX(0deg);
-}
-
-.center:hover .letter .char1,
-.center:hover .letter .char5 {
-    font-weight: 900;
-    background: rgba(197, 104, 6, 0.2);
-    transform: skewY(0deg);
-    filter: blur(0);
-    text-shadow: 0 5px 2px rgb(0, 0, 0, 0.1);
-    box-shadow: 0 0px 2px rgb(0, 0, 0, 0.1);
-    padding: 0 20px;
-}
-
-.center:hover .letter .char2,
-.center:hover .letter .char3,
-.center:hover .letter .char4,
-.center:hover .letter .char6,
-.center:hover .letter .char7,
-.center:hover .letter .char8,
-.center:hover .letter .char9,
-.center:hover .letter .char10,
-.center:hover .letter .char11,
-.center:hover .letter .char12 {
-    background: #FFB294;
-    transform: skewY(0deg);
-    filter: blur(0);
-    text-shadow: 0 5px 2px rgb(0, 0, 0, 0.1);
-    box-shadow: 0 0px 2px rgb(0, 0, 0, 0.1);
-    padding: 0 20px;
+.row {
+    background-color: rgba(250, 245, 245.01);
 }
