@@ -20,20 +20,18 @@ body {
     padding: 25px 0;
     font-family: 'Libre Barcode 128 Text', cursive;
     font-size: 4em;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 3s linear;
+    transition: color 3s ease-in-out;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    color:rgba(255, 255, 255,0.75);
 }
 
 /*Shows the technical writer div on hover */
 
 .center:hover .hide {
-    visibility: visible;
-    opacity: 1;
+    color:black;
 }
 
 /* Styles the main name text block */
