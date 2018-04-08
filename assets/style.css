@@ -1,4 +1,4 @@
-/* Style for the main content 
+/* Basic applied styles for the main content 
 
 ---------------------------
     To use loaded fonts...
@@ -14,6 +14,9 @@ font-family: 'Roboto', sans-serif;
 #005387	(0,83,135) main blue
 #bbbbbb	(187,187,187) ligt grey
 #aaaaaa	(170,170,170) darker grey
+
+See the media.css style sheet for device-specific changes
+
  -------------------------- */
 
 body {
@@ -32,9 +35,9 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* Hides the technical writer div*/
+/* Style for the barcode lettering */
 
-.center .hide {
+.sub {
     padding: 25px 0;
     font-family: 'Libre Barcode 128 Text', cursive;
     font-size: 4em;
@@ -45,9 +48,6 @@ body {
     align-items: center;
     color: rgba(255, 255, 255, 0.75);
 }
-
-/*Shows the technical writer div on hover */
-
 
 /* Styles the main name text block */
 
@@ -66,38 +66,18 @@ body {
 /* Styles the individuals letters */
 
 .letter .char1,
-.letter .char3,
-.letter .char5,
-.letter .char7,
-.letter .char9,
-.letter .char11 {
-    background: rgba(255, 215, 199, 1);
-    width: 1.5em;
-}
-
-.letter .char2,
-.letter .char4,
-.letter .char5,
-.letter .char6,
-.letter .char8,
-.letter .char10,
-.letter .char12 {
-    background: rgba(255, 215, 199, 1);
-    width: 1.5em;
-}
-
-.letter .char1,
 .letter .char2,
 .letter .char3,
 .letter .char4,
+.letter .char5,
 .letter .char6,
 .letter .char7,
 .letter .char8,
 .letter .char9,
 .letter .char10,
-.letter .char5,
 .letter .char11,
 .letter .char12 {
+    background: rgba(255, 215, 199, 1);
     display: inline-block;
     padding: 0 10px;
     transition: .75s;
@@ -105,13 +85,5 @@ body {
     box-shadow: 10px 50px 20px rgb(0, 0, 0, 0.1);
     filter: blur(.5px);
     text-align: center;
-}
-
-.row .letter {
-    margin: auto;
-    max-width: 100%;
-}
-
-.row {
-    background-color: rgba(250, 245, 245.01);
+    width: 1.5em;
 }
