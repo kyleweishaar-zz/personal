@@ -100,14 +100,15 @@ font-family: 'Roboto', sans-serif;
     .container:hover .letter .char1,
     .container:hover .letter .char5 {
         font-weight: 900;
-        background: rgba(0, 83, 135, 0.3);
+        background-color: rgba(0, 83, 135, 0.3);
         transform: skewY(0deg);
         filter: blur(0);
         text-shadow: 0 5px 2px rgb(0, 0, 0, 0.1);
         box-shadow: 0 0px 2px rgb(0, 0, 0, 0.1);
         padding: 0 20px;
         border-radius: 5px 5px;
-        transition: 3s;
+        transition-delay:.75s, 0.5;
+        transition-property:transform, background-color;
     }
     .container:hover .letter .char2,
     .container:hover .letter .char3,
@@ -119,14 +120,15 @@ font-family: 'Roboto', sans-serif;
     .container:hover .letter .char10,
     .container:hover .letter .char11,
     .container:hover .letter .char12 {
-        background: #FFB294;
+        background-color: #FFB294;
         transform: skewY(0deg);
         filter: blur(0);
         text-shadow: 0 5px 2px rgb(0, 0, 0, 0.1);
         box-shadow: 0 0px 2px rgb(0, 0, 0, 0.1);
         padding: 0 20px;
         border-radius: 5px 5px;
-        transition: 3s;
+        transition-delay:.75s, 0.5;
+        transition-property:transform, background-color;
     }
     .container:hover .sub {
         color: rgba(11, 29, 46, 1);
